@@ -29,26 +29,6 @@ public class NewJFrame extends NewJFrame_Base {
         //Countdown_and_next();
     }
 
-    private void timerStart()
-    {
-        for (int i=0; i<=100; i++)
-        {
-            JBar.setValue(i);
-            try {
-                Thread.sleep(50) ;
-            } catch (InterruptedException ex) {
-                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        try {
-            Thread.sleep(100) ;
-        } catch (InterruptedException ex) {
-            Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        FileView.main();  
-        closeframe();
-    }
-
     private void Countdown_and_next()
     {
         Thread t = new Thread(new Runnable() 
@@ -56,7 +36,22 @@ public class NewJFrame extends NewJFrame_Base {
             @Override
             public void run()
             {
-                timerStart();
+                for (int i=0; i<=100; i++)
+                {
+                    JBar.setValue(i);
+                    try {
+                        Thread.sleep(50) ;
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                try {
+                    Thread.sleep(100) ;
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                FileView.main();  
+                closeframe();
             }
         });
         t.start();

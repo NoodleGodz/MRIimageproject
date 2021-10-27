@@ -26,22 +26,20 @@ public class patient {
             String[] r = csvReader.readNext();
             if (r.length == 8)
             {
-            ID=r[0].toString();
-            name=r[1];
-            date_of_birth=r[2];
-            age=Integer.parseInt(r[3]);
-            gender=r[4];
-            address=r[5];
-            bodypart=r[6];
-            description=r[7];
-            }
+                ID=r[0].toString();
+                name=r[1];
+                date_of_birth=r[2];
+                age=Integer.parseInt(r[3]);
+                gender=r[4];
+                address=r[5];
+                bodypart=r[6];
+                description=r[7];
+                }
             else
             {
                 //smth
             }
-
-        }
-        
+        }  
     }
 
     public void writefile(String file_name)
@@ -84,9 +82,4 @@ public class patient {
 
         cum.writefile("C:\\Users\\Asus\\Desktop\\ExampleDataSet\\48452984\\Patientwrite.csv");
     }
-
-
-
-
-
 }

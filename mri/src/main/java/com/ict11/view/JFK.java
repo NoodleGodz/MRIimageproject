@@ -22,32 +22,27 @@ public class JFK extends JFK_Base {
         Countdown_and_next();
     }
 
-    private void timerStart()
-    {
-        for (int i=0; i<=25; i++)
-        {
-            try {
-                Thread.sleep(50) ;
-            } catch (InterruptedException ex) {
-                Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.exit(0); 
-        closeframe();
-    }
-
     private void Countdown_and_next()
     {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run()
             {
-                timerStart();
+                for (int i=0; i<=25; i++)
+                {
+                    try {
+                        Thread.sleep(50) ;
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                System.exit(0); 
+                closeframe();
             }
         });
         t.start();

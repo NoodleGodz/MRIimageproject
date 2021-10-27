@@ -1,8 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.ict11.view;
+
 import com.ict11.tools.ShrinkIcon;
 import com.ict11.view.base.benhnhanview_Base;
 import com.opencsv.exceptions.CsvValidationException;
