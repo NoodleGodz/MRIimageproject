@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.ict11.view;
-import com.ict11.view.*;
 import com.ict11.tools.ShrinkIcon;
 
 import java.io.File;

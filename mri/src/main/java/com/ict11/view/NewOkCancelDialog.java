@@ -11,7 +11,6 @@ import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
-import javax.swing.Painter;
 
 import com.ict11.control.*;
 

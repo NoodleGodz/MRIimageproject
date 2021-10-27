@@ -28,7 +28,6 @@ public class IDView {
     private JFrame mainFrame;
     private JLabel headerLabel;
 
-    private JLabel nhap;
     private JPanel controlPanel;
     private JPanel statusPanel;
     private JMenu jmenu;
@@ -55,7 +54,7 @@ public class IDView {
         mainFrame.setLayout(new GridLayout(3, 1));
         headerLabel = new JLabel("", JLabel.CENTER);
         statusPanel = new JPanel();
-        nhap = new JLabel("", JLabel.CENTER);
+        new JLabel("", JLabel.CENTER);
         headerLabel.setSize(350,300);
         controlPanel = new JPanel();
         controlPanel.setLayout(new FlowLayout());

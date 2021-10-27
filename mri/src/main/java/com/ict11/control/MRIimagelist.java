@@ -1,15 +1,11 @@
 package com.ict11.control;
 
-import javax.imageio.ImageIO;
 import com.opencsv.*;
 import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.*;
 import java.util.*;
-import java.awt.Image;
 import com.ict11.tools.*;
-
-
 
 public class MRIimagelist 
 {
