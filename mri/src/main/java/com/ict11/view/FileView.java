@@ -18,8 +18,6 @@ import javax.swing.JMenuItem;
 //import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
-
-
  
 public class FileView {
  
@@ -65,14 +63,14 @@ public class FileView {
         mainFrame.add(statusPanel);
         mainFrame.setLocationRelativeTo(null);
         JButton nextButton = new JButton("Next");
-                    nextButton.addActionListener(new ActionListener() {
-                        public void actionPerformed(ActionEvent e)
-                         {
-                        mainFrame.setVisible(false);
-                        mainFrame.dispose();
-                        IDView.main();
+        nextButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e)
+             {
+            mainFrame.setVisible(false);
+            mainFrame.dispose();
+            IDView.main();
                         }
-                    });
+        });
         statusPanel.add(nextButton);
         statusPanel.setVisible(false);
         //
@@ -108,12 +106,7 @@ public class FileView {
         fileDialog.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         final JTextArea commentTextArea = new JTextArea("", 2, 25);
 
-
-
-
-
         JButton showFileDialogButton = new JButton("Open Folder");
-
         
         showFileDialogButton.addActionListener(new ActionListener() {
             //@Override

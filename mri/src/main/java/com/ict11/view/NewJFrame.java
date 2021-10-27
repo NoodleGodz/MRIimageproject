@@ -25,15 +25,11 @@ public class NewJFrame extends javax.swing.JFrame {
     public NewJFrame() {
         initComponents();
         //Countdown_and_next();
-
-
-
-        
-        
     }
+    
     private void Countdown_and_next()
     {
-            Thread t = new Thread(new Runnable(){
+        Thread t = new Thread(new Runnable(){
         @Override
         public void run()
         {

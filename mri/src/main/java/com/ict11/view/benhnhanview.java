@@ -53,8 +53,6 @@ public class benhnhanview extends javax.swing.JFrame {
             JFK.executed();
             dispose();
         }
-        
-        
     }
 
     public void updateinfo()
@@ -80,8 +78,6 @@ public class benhnhanview extends javax.swing.JFrame {
             JFK.executed();
             dispose();
         }
-
-
     }
 
     public void colorcue(int x) 
@@ -97,14 +93,14 @@ public class benhnhanview extends javax.swing.JFrame {
     }
     public void openmethod()
     {
-    File file = new File (FindFile.Patdir());
-    Desktop desktop = Desktop.getDesktop();
-    try {
-        desktop.open(file);
-    } catch (IOException e) {
-        // TODO Auto-generated catch block
-        e.printStackTrace();
-    }
+        File file = new File (FindFile.Patdir());
+        Desktop desktop = Desktop.getDesktop();
+        try {
+            desktop.open(file);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
     public void returnmethod() 
     {
@@ -115,15 +111,14 @@ public class benhnhanview extends javax.swing.JFrame {
     }
     public void editmethod()
     {
-
-           jTextPane7.setEditable(true);
-           jTextPane6.setEditable(true);
-           jTextPane5.setEditable(true);
-           jTextPane4.setEditable(true);
-           jTextPane3.setEditable(true);
-           jTextPane2.setEditable(true);
-           jTextPane1.setEditable(true);
-           jTextPane8.setEditable(true);
+        jTextPane7.setEditable(true);
+        jTextPane6.setEditable(true);
+        jTextPane5.setEditable(true);
+        jTextPane4.setEditable(true);
+        jTextPane3.setEditable(true);
+        jTextPane2.setEditable(true);
+        jTextPane1.setEditable(true);
+        jTextPane8.setEditable(true);
         jButton3.setEnabled(false);
         jButton2.setEnabled(false);
         jButton4.setEnabled(false);
@@ -135,9 +130,6 @@ public class benhnhanview extends javax.swing.JFrame {
         jCheckBox1.setBackground(Color.pink);
         jLabel10.setForeground(Color.MAGENTA);
         jLabel10.setText("Edit mode");
-
-
-
     }
     public void savemethod()
     {
@@ -158,17 +150,17 @@ public class benhnhanview extends javax.swing.JFrame {
         jTextPane2.setEditable(false);
         jTextPane1.setEditable(false);
         jTextPane8.setEditable(true);
-     jButton3.setEnabled(true);
-     jButton2.setEnabled(true);
-     jButton4.setEnabled(true);
-     jButton5.setEnabled(true);
-     jButton6.setEnabled(true);
-     jButton7.setEnabled(false);
-     jLabel11.setVisible(false);
-     jLabel10.setForeground(new java.awt.Color(255, 51, 51));
-     jLabel10.setText("Infomation");
-     updateinfo();
-     loadimage(numberdisplay);
+        jButton3.setEnabled(true);
+        jButton2.setEnabled(true);
+        jButton4.setEnabled(true);
+        jButton5.setEnabled(true);
+        jButton6.setEnabled(true);
+        jButton7.setEnabled(false);
+        jLabel11.setVisible(false);
+        jLabel10.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel10.setText("Infomation");
+        updateinfo();
+        loadimage(numberdisplay);
     }
     /**
      * This method is called from within the constructor to initialize the form.

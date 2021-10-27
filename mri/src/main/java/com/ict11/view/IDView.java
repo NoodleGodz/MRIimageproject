@@ -121,27 +121,20 @@ public class IDView {
         {
             public void actionPerformed(ActionEvent e) 
             {
-             //userText.setText(FindFile.dIRString());
-             FindFile.SaveIDfolder(userText.getText());
-             if (FindFile.FindID())
-             {
-                panel.setBackground(Color.green);  
-                statusPanel.setVisible(true);
-             }
-             else
-             {
-                panel.setBackground(Color.red);  
-                statusPanel.setVisible(false);
-                JOptionPane.showMessageDialog(mainFrame, "Invalid ID - Can't Find Folder", "Warning", JOptionPane.ERROR_MESSAGE);
-             }
+                //userText.setText(FindFile.dIRString());
+                FindFile.SaveIDfolder(userText.getText());
+                if (FindFile.FindID())
+                {
+                   panel.setBackground(Color.green);  
+                   statusPanel.setVisible(true);
+                }
+                else
+                {
+                   panel.setBackground(Color.red);  
+                   statusPanel.setVisible(false);
+                   JOptionPane.showMessageDialog(mainFrame, "Invalid ID - Can't Find Folder", "Warning", JOptionPane.ERROR_MESSAGE);
+                }
             }    
-
-
-
-
-
-
-
         });
         panel.add(okButton);
         userText.setColumns(20);
@@ -156,11 +149,7 @@ public class IDView {
         userText.getInputMap().put(KeyStroke.getKeyStroke("ENTER"),
                             "pressed");
         userText.getActionMap().put("pressed",releasedAction);
-
-
-
         mainFrame.setVisible(true);
-
     }
  
 }

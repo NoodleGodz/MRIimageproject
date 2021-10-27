@@ -333,8 +333,6 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
      */
     public static void main() {
         /* Set the Nimbus look and feel */
-        
-
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
