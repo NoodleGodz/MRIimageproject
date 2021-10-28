@@ -11,7 +11,6 @@ import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
-import javax.swing.Painter;
 
 import com.ict11.control.*;
 
@@ -334,8 +333,6 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
      */
     public static void main() {
         /* Set the Nimbus look and feel */
-        
-
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

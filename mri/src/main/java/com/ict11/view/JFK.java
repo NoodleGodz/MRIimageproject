@@ -26,7 +26,7 @@ public class JFK extends javax.swing.JFrame {
 
     private void Countdown_and_next()
     {
-            Thread t = new Thread(new Runnable(){
+        Thread t = new Thread(new Runnable(){
         @Override
         public void run()
         {
@@ -48,11 +48,8 @@ public class JFK extends javax.swing.JFrame {
             closeframe();
         }
 
-        
         });
         t.start();
-
-
     }
     public JFK() {
         initComponents();

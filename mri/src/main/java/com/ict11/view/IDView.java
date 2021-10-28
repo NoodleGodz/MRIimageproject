@@ -28,7 +28,6 @@ public class IDView {
     private JFrame mainFrame;
     private JLabel headerLabel;
 
-    private JLabel nhap;
     private JPanel controlPanel;
     private JPanel statusPanel;
     private JMenu jmenu;
@@ -55,7 +54,7 @@ public class IDView {
         mainFrame.setLayout(new GridLayout(3, 1));
         headerLabel = new JLabel("", JLabel.CENTER);
         statusPanel = new JPanel();
-        nhap = new JLabel("", JLabel.CENTER);
+        new JLabel("", JLabel.CENTER);
         headerLabel.setSize(350,300);
         controlPanel = new JPanel();
         controlPanel.setLayout(new FlowLayout());
@@ -122,27 +121,20 @@ public class IDView {
         {
             public void actionPerformed(ActionEvent e) 
             {
-             //userText.setText(FindFile.dIRString());
-             FindFile.SaveIDfolder(userText.getText());
-             if (FindFile.FindID())
-             {
-                panel.setBackground(Color.green);  
-                statusPanel.setVisible(true);
-             }
-             else
-             {
-                panel.setBackground(Color.red);  
-                statusPanel.setVisible(false);
-                JOptionPane.showMessageDialog(mainFrame, "Invalid ID - Can't Find Folder", "Warning", JOptionPane.ERROR_MESSAGE);
-             }
+                //userText.setText(FindFile.dIRString());
+                FindFile.SaveIDfolder(userText.getText());
+                if (FindFile.FindID())
+                {
+                   panel.setBackground(Color.green);  
+                   statusPanel.setVisible(true);
+                }
+                else
+                {
+                   panel.setBackground(Color.red);  
+                   statusPanel.setVisible(false);
+                   JOptionPane.showMessageDialog(mainFrame, "Invalid ID - Can't Find Folder", "Warning", JOptionPane.ERROR_MESSAGE);
+                }
             }    
-
-
-
-
-
-
-
         });
         panel.add(okButton);
         userText.setColumns(20);
@@ -157,11 +149,7 @@ public class IDView {
         userText.getInputMap().put(KeyStroke.getKeyStroke("ENTER"),
                             "pressed");
         userText.getActionMap().put("pressed",releasedAction);
-
-
-
         mainFrame.setVisible(true);
-
     }
  
 }

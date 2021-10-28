@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.ict11.view;
-import com.ict11.view.*;
 import com.ict11.tools.ShrinkIcon;
 
 import java.io.File;
@@ -26,15 +25,11 @@ public class NewJFrame extends javax.swing.JFrame {
     public NewJFrame() {
         initComponents();
         //Countdown_and_next();
-
-
-
-        
-        
     }
+    
     private void Countdown_and_next()
     {
-            Thread t = new Thread(new Runnable(){
+        Thread t = new Thread(new Runnable(){
         @Override
         public void run()
         {
