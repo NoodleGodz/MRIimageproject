@@ -31,7 +31,7 @@ public abstract class JFK_Base extends javax.swing.JFrame {
 
         jButton1.setText("OK");
 
-        File ia = new File("resource\\757.png");
+        File ia = new File("mri\\resource\\757.png");
         ShrinkIcon icon = new ShrinkIcon(ia.getAbsolutePath(),true);
         jLabel3.setIcon(icon);
 
