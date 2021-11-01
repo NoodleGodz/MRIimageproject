@@ -114,7 +114,7 @@ public abstract class benhnhanview_Base extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel10.setText("Infomation");
+        jLabel10.setText("Information");
 
         jTextPane1.setEditable(false);
         jTextPane1.setToolTipText("");
