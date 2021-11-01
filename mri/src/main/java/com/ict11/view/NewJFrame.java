@@ -40,15 +40,10 @@ public class NewJFrame extends NewJFrame_Base {
                 {
                     JBar.setValue(i);
                     try {
-                        Thread.sleep(50) ;
+                        Thread.sleep(10);
                     } catch (InterruptedException ex) {
                         Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                }
-                try {
-                    Thread.sleep(100) ;
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 FileView.main();  
                 closeframe();

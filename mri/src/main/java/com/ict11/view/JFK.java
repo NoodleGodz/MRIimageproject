@@ -28,18 +28,13 @@ public class JFK extends JFK_Base {
             @Override
             public void run()
             {
-                for (int i=0; i<=25; i++)
+                for (int i=0; i<=5; i++)
                 {
                     try {
-                        Thread.sleep(50) ;
+                        Thread.sleep(1000) ;
                     } catch (InterruptedException ex) {
                         Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                }
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(NewJFrame.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 System.exit(0); 
                 closeframe();
