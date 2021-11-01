@@ -2,6 +2,7 @@ package com.ict11.view.base;
 
 import com.ict11.tools.ShrinkIcon;
 import java.io.File;
+import java.awt.Dimension;
 
 public abstract class JFK_Base extends javax.swing.JFrame {
     /**
@@ -18,21 +19,22 @@ public abstract class JFK_Base extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("OOPS- Group 5 - MRI image system");
+        setTitle("Oh no!");
         setAlwaysOnTop(true);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Your data has been corrupted.....:(");
+        jLabel1.setText("Your data has been corrupted :(");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("This program will be terminated");
+        jLabel2.setText("See you again in 5 seconds...");
 
         jButton1.setText("OK");
 
-        File ia = new File("mri\\resource\\757.png");
+        File ia = new File("mri\\resource\\error.png");
         ShrinkIcon icon = new ShrinkIcon(ia.getAbsolutePath(),true);
+        jLabel3.setPreferredSize(new Dimension(465, 246));
         jLabel3.setIcon(icon);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
