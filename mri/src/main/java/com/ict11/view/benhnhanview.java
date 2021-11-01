@@ -107,7 +107,6 @@ public class benhnhanview extends benhnhanview_Base {
         IDView.main();
         this.setVisible(false);
         dispose();
-
     }
 
     public void editmethod()
@@ -127,7 +126,7 @@ public class benhnhanview extends benhnhanview_Base {
         jButton6.setEnabled(false);
         jButton7.setEnabled(true);
         jLabel11.setVisible(true);
-        jLabel8.setIcon(new ShrinkIcon("resource\\hqdefault.jpg"));
+        jLabel8.setIcon(new ShrinkIcon("mri\\resource\\hqdefault.jpg"));
         jCheckBox1.setBackground(Color.pink);
         jLabel10.setForeground(Color.MAGENTA);
         jLabel10.setText("Edit mode");
@@ -152,6 +151,7 @@ public class benhnhanview extends benhnhanview_Base {
         jTextPane2.setEditable(false);
         jTextPane1.setEditable(false);
         jTextPane8.setEditable(true);
+        jButton2.setEnabled(true);
         jButton3.setEnabled(true);
         jButton4.setEnabled(true);
         jButton5.setEnabled(true);
