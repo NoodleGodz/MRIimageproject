@@ -53,13 +53,13 @@ public abstract class IDView_Base {
         jmenu.add(jmi);
         jmenu.add(jexit);
         jbar.add(jmenu);
-        //\\
+
         mainFrame.setJMenuBar(jbar);
         mainFrame.add(headerLabel);
         mainFrame.add(controlPanel);
         mainFrame.add(statusPanel);
 
-        mainFrame.setTitle("ID");
+        mainFrame.setTitle("OOPS- Group 5 - MRI image system");
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mainFrame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent windowEvent) {
