@@ -89,7 +89,7 @@ public class FindFile {
                 return patientdir + "\\" + pnghander;
             }
         }
-        return "resource\\aihoir.png";
+        return "mri\\resource\\aihoir.png";
     }
 
 
