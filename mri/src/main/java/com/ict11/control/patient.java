@@ -70,7 +70,7 @@ public class patient {
     public static void maintest(String[] args) {
         patient cum = new patient();
         try {
-            cum.readfile("C:\\Users\\Asus\\Desktop\\ExampleDataSet\\48452984\\Patient.csv");
+            cum.readfile("C:/Users/Asus/Desktop/ExampleDataSet/48452984/Patient.csv");
         } catch (CsvValidationException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -80,6 +80,6 @@ public class patient {
         }
         cum.teststring();
 
-        cum.writefile("C:\\Users\\Asus\\Desktop\\ExampleDataSet\\48452984\\Patientwrite.csv");
+        cum.writefile("C:/Users/Asus/Desktop/ExampleDataSet/48452984/Patientwrite.csv");
     }
 }

@@ -67,7 +67,7 @@ public abstract class FileView_Base extends javax.swing.JFrame {
         jmenu.add(jmi);
         jmenu.add(jexit);
         jbar.add(jmenu);
-        //\\
+        ///
         mainFrame.setJMenuBar(jbar);
         mainFrame.setVisible(true);
     }

@@ -24,8 +24,8 @@ public class FindFile {
     static File DIRPATH;
     static String IDfolder;
     static String patientdir;
-    static String filepat = "\\Patient.csv";
-    static String filepro = "\\Problem.csv";
+    static String filepat = "/Patient.csv";
+    static String filepro = "/Problem.csv";
     public static void SaveDir(File c)
     {
         DIRPATH = c;
@@ -43,7 +43,7 @@ public class FindFile {
             if (filename.equalsIgnoreCase(IDfolder)) 
             {
                 //System.out.println(filename + " found");
-                patientdir = DIRPATH.getAbsolutePath() + "\\" + IDfolder;
+                patientdir = DIRPATH.getAbsolutePath() + "/" + IDfolder;
                 return true;
             }
         }
@@ -81,15 +81,15 @@ public class FindFile {
             if (filename.equalsIgnoreCase(jpghander)) 
             {
                 //System.out.println(filename + " found");
-                return patientdir + "\\" + jpghander;
+                return patientdir + "/" + jpghander;
             }
             if (filename.equalsIgnoreCase(pnghander)) 
             {
                 //System.out.println(filename + " found");
-                return patientdir + "\\" + pnghander;
+                return patientdir + "/" + pnghander;
             }
         }
-        return "mri\\resource\\aihoir.png";
+        return "mri/resource/aihoir.png";
     }
 
 

@@ -30,7 +30,7 @@ public abstract class NewJFrame_Base extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
         jLabel2.setToolTipText("");
-        File ia = new File("mri\\resource\\unnamed (3s).png");
+        File ia = new File("mri/resource/unnamed (3s).png");
         ShrinkIcon icon = new ShrinkIcon(ia.getAbsolutePath(),true);
         jLabel2.setIcon(icon);
 

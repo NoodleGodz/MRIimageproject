@@ -17,7 +17,7 @@ import com.ict11.control.*;
 public class benhnhanview extends benhnhanview_Base {
   
     /**
-     * C:\\Users\\Asus\\Desktop\\YABE\\dataset\\48452984\\1.jpg
+     * C:/Users/Asus/Desktop/YABE/dataset/48452984/1.jpg
      * Creates new form benhnhanview
      */
     public benhnhanview() 
@@ -126,7 +126,7 @@ public class benhnhanview extends benhnhanview_Base {
         jButton6.setEnabled(false);
         jButton7.setEnabled(true);
         jLabel11.setVisible(true);
-        jLabel8.setIcon(new ShrinkIcon("mri\\resource\\hqdefault.jpg"));
+        jLabel8.setIcon(new ShrinkIcon("mri/resource/hqdefault.jpg"));
         jCheckBox1.setBackground(Color.pink);
         jLabel10.setForeground(Color.MAGENTA);
         jLabel10.setText("Edit mode");
