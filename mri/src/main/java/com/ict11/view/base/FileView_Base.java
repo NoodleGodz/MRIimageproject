@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 public abstract class FileView_Base extends javax.swing.JFrame {
     public void initComponents() {
-        mainFrame = new JFrame("OOPS- Group 5 - MRI image system");
+        mainFrame = new JFrame("OOPS- Group 4 - MRI image system");
         mainFrame.setSize(500, 300);
         mainFrame.setLayout(new GridLayout(3, 1));
         mainFrame.addWindowListener(new WindowAdapter() {

@@ -59,7 +59,7 @@ public abstract class IDView_Base {
         mainFrame.add(controlPanel);
         mainFrame.add(statusPanel);
 
-        mainFrame.setTitle("OOPS- Group 5 - MRI image system");
+        mainFrame.setTitle("OOPS- Group 4 - MRI image system");
         mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         mainFrame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent windowEvent) {

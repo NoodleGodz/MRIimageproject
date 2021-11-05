@@ -3,8 +3,7 @@ package com.ict11.view.base;
 import com.ict11.tools.ShrinkIcon;
 
 import java.io.File;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 public abstract class NewJFrame_Base extends javax.swing.JFrame {
     
@@ -21,7 +20,7 @@ public abstract class NewJFrame_Base extends javax.swing.JFrame {
         JBar = new javax.swing.JProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("OOPS- Group 5 - MRI image system");
+        setTitle("OOPS- Group 4 - MRI image system");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -30,7 +29,7 @@ public abstract class NewJFrame_Base extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(153, 153, 153));
         jLabel2.setToolTipText("");
-        File ia = new File("mri/resource/unnamed (3s).png");
+        File ia = new File("mri/resource/unnamed (4).png");
         ShrinkIcon icon = new ShrinkIcon(ia.getAbsolutePath(),true);
         jLabel2.setIcon(icon);
 
