@@ -71,7 +71,7 @@ public abstract class benhnhanview_Base extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("OOPS- Group 5 - MRI image system");
+        setTitle("OOPS- Group 4 - MRI image system");
         setResizable(false);
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
