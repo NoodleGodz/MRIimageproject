@@ -24,15 +24,15 @@ public class MRIimagelist
             String[] r = csvReader.readNext();
             NumberofImages = Integer.parseInt(r[0]);
             Problem = new boolean[NumberofImages+1];
-            imagelist.add(new StretchIcon("resource\\aihoir.png"));
-            //imagelist = new ShrinkIcon("resource\\aihoir.png")[NumberofImages+1];
+            imagelist.add(new StretchIcon("resource/aihoir.png"));
+            //imagelist = new ShrinkIcon("resource/aihoir.png")[NumberofImages+1];
             for (int i=1;i<=NumberofImages;i++)
             {
                 Problem[i]=false;
                 imagelist.add(new StretchIcon(FindFile.FindImage(i)));
                 
             }
-            //imagelist.add(new ShrinkIcon("resource\\aihoir.png"));
+            //imagelist.add(new ShrinkIcon("resource/aihoir.png"));
             for (int i = 1;i<r.length;i++)
             {
                 try {
@@ -93,7 +93,7 @@ public class MRIimagelist
     public static void maintest(String[] args) {
         MRIimagelist a = new MRIimagelist();
         try {
-            a.readfile("C:\\Users\\Asus\\Desktop\\ExampleDataSet\\48452984\\Problem.csv");
+            a.readfile("C:/Users/Asus/Desktop/ExampleDataSet/48452984/Problem.csv");
         } catch (CsvValidationException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -101,7 +101,7 @@ public class MRIimagelist
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        a.writefile("C:\\Users\\Asus\\Desktop\\ExampleDataSet\\48452984\\ProblemWrite.csv");
+        a.writefile("C:/Users/Asus/Desktop/ExampleDataSet/48452984/ProblemWrite.csv");
     }
 }
 
